@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sytle.css">
+  
+  <title>Decodificador</title>
+</head>
+<body>
+  <header>
+    <h1 id="titulo">Criptografar/Descriptografar de texto</h1>
+  </header>
+
+  <main>
+    <section class="esquerda">
+      <img src="img/Frame 6.png" class="logo" alt="img.alura">
+      <div class="caixa-texto">
+        <label for="campo-texto">Digite seu texto</label>
+        <textarea id="inputBox" rows="7" cols="50"></textarea>
+      </div>
+      <div class="caixa-botao">
+        <button type="button" id="btn-criptografar" class="btn criptografar" onclick="codeficar()">Criptografar</button>
+        <button type="button" id="btn-descriptografar" class="btn descriptografar" onclick="descodificar()">Descriptografar</button>
+      </div>
+      <div>
+        <textarea id="resultBox" placeholder="Resultado"></textarea>
+        <button id="buttonCopiar" class="button" onclick="copiar()">Copiar</button>
+      </div>
+      
+    </section>
+    
+
+    <footer  id="rodape">
+      <p>Desenvolvido por Vinicius Mattei</p>
+
+  </footer>
+  </main>
+   
+ 
+
+  <script src="criptografia.js"></script>
+  
+</body>
+</html>
